@@ -1,11 +1,14 @@
 {
+  "homepage": "https://dhavalsonavaria.github.io/Recipe/",
   "name": "cookingblog",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon app.js"
+    "start": "nodemon app.js",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "keywords": [],
   "author": "",
@@ -23,6 +26,7 @@
     "mongoose": "^6.8.1"
   },
   "devDependencies": {
+    "gh-pages": "^4.0.0",
     "nodemon": "^2.0.20"
   }
 }
